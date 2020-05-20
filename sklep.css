@@ -2,3 +2,19 @@ body
 {
 	
 }
+
+#ogłoszenie1
+{
+	width: 200px;
+	height: 300px;
+	border: solid #000000 3px;
+}
+
+#o1
+{
+	float: bottom;
+	text-align: center;
+	border: solid 1px #000000;
+	width: 200px;
+	height: 50px;
+}
