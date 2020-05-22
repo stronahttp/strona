@@ -6,9 +6,33 @@
 
 <link rel="stylesheet" href="strona główna.css"/>
 
+<script type="text/javascript">
+
+function odliczanie()
+{
+
+var dzisiaj = new Date();
+
+var dzien = dzisiaj.getDate();
+var miesiac = dzisiaj.getMonth();
+var rok = dzisiaj.getYear();
+
+var godzina = dzisiaj.getHours();
+var minuta = dzisiaj.getMinutes();
+var sekunda = dzisiaj.getSeconds();
+
+document.getElementById("zegar").innerHTML=dzien+"/"+miesiac+"/"+rok+"|"+godzina+":"+minuta+":"+sekunda;
+setTimeout("odliczanie()",1000);
+
+}
+
+</script> 
+
 </head>
 
-<body>
+<body onload="odliczanie()">
+
+<div id="zegar"></div>
 
 <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"/>
 
